@@ -13,8 +13,9 @@ namespace FullscreenDeSmuME
 {
     public class FullscreenDeSmuMESettings : ISettings
     {
-        private static ILogger logger = LogManager.GetLogger();
+        [JsonIgnore]
         private FullscreenDeSmuMEPlugin plugin;
+        [JsonIgnore]
         private IPlayniteAPI api;
 
         public FullscreenDeSmuMESettings()
@@ -40,6 +41,7 @@ namespace FullscreenDeSmuME
         public Emulator SelectedEmulator { get; set; }
         [JsonIgnore]
         public string TimeoutText { get; set; }
+
         public int Timeout { get; set; } = 1000;
         public Guid SelectedEmulatorGuid { get; set; }
 
@@ -63,7 +65,6 @@ namespace FullscreenDeSmuME
 
         public bool VerifySettings(out List<string> errors)
         {
-            
             errors = new List<string>();
 
             try

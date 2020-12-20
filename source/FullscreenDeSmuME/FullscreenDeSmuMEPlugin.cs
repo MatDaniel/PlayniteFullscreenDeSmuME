@@ -18,7 +18,6 @@ namespace FullscreenDeSmuME
         static extern bool SetForegroundWindow(IntPtr hWnd);
 
         private FullscreenDeSmuMESettings settings { get; }
-        private ILogger logger { get; } = LogManager.GetLogger();
 
         public override Guid Id { get; } = Guid.Parse("90557cf8-d588-43e3-a57f-c8df5fdbd12f");
 

@@ -1,6 +1,7 @@
+Id: Fullscreen_DeSmuME
 Name: Fullscreen DeSmuME
 Author: Daniel M.
-Version: 1.0
+Version: 1.1
 Module: FullscreenDeSmuME.dll
 Type: GenericPlugin
 Icon: Resources\desmumeicon.png
